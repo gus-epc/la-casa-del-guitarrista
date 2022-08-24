@@ -10,8 +10,9 @@ body {
   background-color: #0c0c0c; }
   body header {
     grid-area: header; }
-    body header nav {
-      background-color: black; }
+    body header nav  {
+      background-color: rgb(233, 17, 17);
+      margin: 2vh;  }
   body main {
     grid-area: mainn;
     padding: 3vh 2vh 3vh 3vh;
@@ -62,7 +63,9 @@ h3 {
   min-height: 100vh;
   min-width: 100vw;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "mainn" "footerr"; }
+  grid-template-areas: "header"
+ "mainn"
+ "footerr"; }
 
 .btn {
   background-color: #323232;
