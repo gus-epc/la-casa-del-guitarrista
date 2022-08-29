@@ -5,7 +5,7 @@ const Header = () =>{
 
       <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#"><img src='https://scontent.fpbc6-1.fna.fbcdn.net/v/t1.6435-1/105991974_2899382556826738_1957006309471431825_n.jpg?stp=c28.24.146.146a_dst-jpg_p200x200&_nc_cat=109&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=jQNgQ4_PrmYAX_gPkue&_nc_ht=scontent.fpbc6-1.fna&oh=00_AT8upKuHvcJYj8yiMyia-BCv4hVKQiw0y7Md8NNYowE91w&oe=632C40D0'></img></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

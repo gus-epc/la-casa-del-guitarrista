@@ -1,10 +1,8 @@
-const Main = (texto) =>{
+import Card from "./ItemCard/ItemCard";
+const Main = () =>{
     
     return(
-        <p style={{
-            color: "white",
-            fontSize: "5vw"
-        }}>{texto.saludo}</p>
+        <Card/>
     );
 };
 export default Main;
