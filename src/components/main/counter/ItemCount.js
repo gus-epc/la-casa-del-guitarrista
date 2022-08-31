@@ -20,7 +20,7 @@ const ItemCount = ({stock, initial, onAdd}) =>{
   
     }
     return(
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <div className="btn-group" role="group" aria-label="Basic mixed styles example">
   <button onClick={restar}type="button" className="btn btn-danger">-</button>
   <p>{count}</p>
   <button onClick={sumar} type="button" className="btn btn-success">+</button>

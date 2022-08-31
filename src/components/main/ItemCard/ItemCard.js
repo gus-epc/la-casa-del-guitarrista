@@ -5,8 +5,8 @@ const onAdd = () =>{
 }
  return ( 
     <div>
-     <div className="card" style={{width: "28rem"}}>
-  <div className="card-body">
+     <div className="card" style={{width: "25rem"}}>
+  <div>
     <h5 className="card-title">ProductoX</h5>
     <ItemCount stock={10} initial={1} onAdd={onAdd}/>
   </div>
