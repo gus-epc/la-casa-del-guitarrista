@@ -1,7 +1,7 @@
 import { useEffect,useState } from "react";
-import productos from "./productList/productos";
+import productos from "./productos";
 import ItemList from "./productList/ItemList";
-const Main = () => {
+const ItemListContainer = () => {
   const [items, setItems] = useState([]);
 
     useEffect(()=> {
@@ -16,13 +16,10 @@ const Main = () => {
     }).catch((err) => {
         
     });}, []);
-console.log(items);
     return(
-        <>
+        <section id="marcas">
         <ItemList items={items}/>
-
-       
-        </>
+        </section>            
     );
 };
-export default Main;
+export default ItemListContainer;

@@ -100,8 +100,6 @@ h3 {
 .m {
   display: flex;
   flex-direction: column; }
-  .m:hover {
-    transform: scale(1.1); }
 
 .videos {
   display: flex;
