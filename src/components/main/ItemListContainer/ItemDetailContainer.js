@@ -1,27 +1,29 @@
 import { useEffect,useState } from "react";
-import productos from "./productos";
 import ItemDetail from "./ItemDetail";
-function ItemDetailContainer () {
+import { useParams } from "react-router-dom";
+function ItemDetailContainer ({marca}) {
+console.log(marca); // No logro pasar el array hasta este punto
+    const itemUrl = useParams()
 
-    let vista = "none"
-    const [items, setItems] = useState([]);
+
+    const [itemsDt, setItems] = useState([]);
 
     useEffect(()=> {
-        const renderProducts = new Promise((resolve, reject) => {
+        const renderItemDetail = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(productos)
+            resolve(marca)
         }, 2000);
     })
-    renderProducts
+    renderItemDetail
     .then((result) => {
-        setItems(result.find((producto) => producto.id ==4));
+        setItems(result.find((marca) => marca.modelo == itemUrl));
     }).catch((err) => {
 
     });}, []);
 
     return(
         <section id="marcas">
-        <ItemDetail items={items}/>
+        <ItemDetail itemDt={itemDt}/>
         </section>            
     );
 };
