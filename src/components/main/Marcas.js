@@ -1,19 +1,24 @@
 const HANNABACH = [
   {modelo: "HANNABACH 1869",
   precio: "999",
-  imgSrc: "../assets/hannabach/1869.jpg"
+  imgSrc: "../assets/hannabach/1869.jpg",
+  descripcion: "Las mejores cuerdas para guitarra"
   },
   {modelo: "HANNABACH EXCLUSIVE",
   precio: "827",
-  imgSrc: "../assets/hannabach/exclusive.jpg"
+  imgSrc: "../assets/hannabach/exclusive.jpg",
+  descripcion: "Las mejores cuerdas para guitarra"
   },
   {modelo: "HANNABACH GOLDIN",
   precio: "765",
-  imgSrc: "../assets/hannabach/goldin.jpg"
+  imgSrc: "../assets/hannabach/goldin.jpg",
+  descripcion: "Las mejores cuerdas para guitarra"
   },
   {modelo: "HANNABACH SP CARBÓN",
   precio: "596",
-  imgSrc: "../assets/hannabach/cus-car.jpg"
+  imgSrc: "../assets/hannabach/cus-car.jpg",
+  descripcion: "Las mejores cuerdas para guitarra"
+  
   },
   {modelo: "HANNABACH CUSTOM-MADE",
   precio: "425",

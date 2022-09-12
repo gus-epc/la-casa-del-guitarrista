@@ -1,29 +1,29 @@
 import { useEffect,useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-function ItemDetailContainer ({marca}) {
-console.log(marca); // No logro pasar el array hasta este punto
+import Marcas from "../Marcas";
+function ItemDetailContainer (propObj) {
+console.log(propObj);//no pasa la prop :(
     const itemUrl = useParams()
 
-
-    const [itemsDt, setItems] = useState([]);
+    const [object, setItems] = useState([]);
 
     useEffect(()=> {
         const renderItemDetail = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(marca)
+            resolve(Marcas[0])
         }, 2000);
     })
     renderItemDetail
     .then((result) => {
-        setItems(result.find((marca) => marca.modelo == itemUrl));
+        setItems(result.find((object) => object.modelo == itemUrl.id));
     }).catch((err) => {
 
     });}, []);
 
     return(
         <section id="marcas">
-        <ItemDetail itemDt={itemDt}/>
+        <ItemDetail marca={object}/>
         </section>            
     );
 };

@@ -1,25 +1,27 @@
 import ItemCard from "./ItemCard/ItemCard";
 import { Link } from "react-router-dom";
 import ItemDetailContainer from "./ItemDetailContainer";
-const Category = ({marca}) => {
+const Category = ({object}) => {
 
         return(
         <>
-        {marca.map((marca)  => {
+        {object.map(({modelo, precio, imgSrc}) => {
+            const propObj = object
+
             return(
-                
+ 
         <div className="m">
-        <img className="marca" src={marca.imgSrc}></img>
-        <h5>{marca.modelo}</h5>
-        <p>${marca.precio}</p>
-        <Link to={`/item/${marca.modelo}`} element={<ItemDetailContainer marca={marca}/>}>
+        <img className="marca" src={imgSrc}></img>
+        <h5>{modelo}</h5>
+        <p>${precio}</p>
+        <Link to={`/item/${modelo}`}  element={<ItemDetailContainer modelo={propObj} />}>
         <button  type="button" className="btn btn-success" >Detalles del Producto</button>
         </Link>
     <ItemCard/>
         </div>  
 )})}
-</>
 
+</>
 )};
 
 

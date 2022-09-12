@@ -8,7 +8,7 @@ function Marca () {
     let index = marcaUrl.categoryName
 
 
-    const [marca, setItems] = useState([]);
+    const [object, setItems] = useState([]);
 
     useEffect(()=> {
         const renderMarca = new Promise((resolve, reject) => {
@@ -26,7 +26,7 @@ function Marca () {
 
     return(
         <section id="marcas">
-        <Category marca={marca}/>
+        <Category object={object}/>
         </section>            
     );
 };
