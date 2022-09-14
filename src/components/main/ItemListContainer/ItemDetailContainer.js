@@ -1,9 +1,11 @@
-import { useEffect,useState } from "react";
+import { useContext, useEffect,useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import Marcas from "../Marcas";
-function ItemDetailContainer (propObj) {
-console.log(propObj);//no pasa la prop :(
+import { CategoriaContext } from "../../../Context/CategoriaContext";
+function ItemDetailContainer () {
+const{categoria}=useContext(CategoriaContext)
+
     const itemUrl = useParams()
 
     const [object, setItems] = useState([]);
@@ -11,7 +13,7 @@ console.log(propObj);//no pasa la prop :(
     useEffect(()=> {
         const renderItemDetail = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(Marcas[0])
+            resolve(categoria)
         }, 2000);
     })
     renderItemDetail
@@ -20,7 +22,7 @@ console.log(propObj);//no pasa la prop :(
     }).catch((err) => {
 
     });}, []);
-
+ 
     return(
         <section id="marcas">
         <ItemDetail marca={object}/>

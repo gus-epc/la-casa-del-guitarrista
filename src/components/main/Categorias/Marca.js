@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom'
-import { useEffect,useState } from "react";
+import { useContext, useEffect,useState } from "react";
 import Marcas from '../Marcas';
 import Category from "../ItemListContainer/Category";
+import { CategoriaContext } from '../../../Context/CategoriaContext';
 function Marca () {
 
     const marcaUrl = useParams()
@@ -21,9 +22,11 @@ function Marca () {
        setItems(result)
 
     }).catch((err) => {
+    
 
     });}, []);
-
+    const {addToCategoria} = useContext(CategoriaContext)
+    addToCategoria(object)
     return(
         <section id="marcas">
         <Category object={object}/>

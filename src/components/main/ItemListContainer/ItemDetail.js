@@ -1,5 +1,8 @@
+import { useContext } from "react";
+import { CartContext } from "../../../Context/CartContext";
 import ItemCard from "./ItemCard/ItemCard";
 function ItemDetail({marca}) {
+const {addToCart} = useContext(CartContext)
 
   return (
     <div className="m">
@@ -8,7 +11,7 @@ function ItemDetail({marca}) {
   <p>${marca.precio}</p>
   <p>{marca.descripcion}</p>
   <p>{marca.categoria}</p>
-<ItemCard/>
+<ItemCard addToCart={addToCart} marca={marca}/>
     </div>
   )
 }

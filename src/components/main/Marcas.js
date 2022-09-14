@@ -1,55 +1,66 @@
 const HANNABACH = [
-  {modelo: "HANNABACH 1869",
+  {id: 1.1,
+  modelo: "HANNABACH 1869",
   precio: "999",
   imgSrc: "../assets/hannabach/1869.jpg",
   descripcion: "Las mejores cuerdas para guitarra"
   },
-  {modelo: "HANNABACH EXCLUSIVE",
+  {id: 1.2,
+  modelo: "HANNABACH EXCLUSIVE",
   precio: "827",
   imgSrc: "../assets/hannabach/exclusive.jpg",
   descripcion: "Las mejores cuerdas para guitarra"
   },
-  {modelo: "HANNABACH GOLDIN",
+  {id: 1.3,
+  modelo: "HANNABACH GOLDIN",
   precio: "765",
   imgSrc: "../assets/hannabach/goldin.jpg",
   descripcion: "Las mejores cuerdas para guitarra"
   },
-  {modelo: "HANNABACH SP CARBÓN",
+  {id: 1.4,
+  modelo: "HANNABACH SP CARBÓN",
   precio: "596",
   imgSrc: "../assets/hannabach/cus-car.jpg",
   descripcion: "Las mejores cuerdas para guitarra"
-  
   },
-  {modelo: "HANNABACH CUSTOM-MADE",
+  {id: 1.5,
+  modelo: "HANNABACH CUSTOM-MADE",
   precio: "425",
   imgSrc: "../assets/hannabach/cus.png"
   },
-  {modelo: "HANNABACH SILVER SPECIAL",
+  {id: 1.6,
+  modelo: "HANNABACH SILVER SPECIAL",
   precio: "765",
   imgSrc: "../assets/hannabach/815.png"
   }]
   const KNOBLOCH = [
-    {modelo: " 1869",
+    {id: 2.1,
+    modelo: " 1869",
     precio: "999",
     imgSrc: "../assets/hannabach/1869.jpg"
     },
-    {modelo: " EXCLUSIVE",
+    {id: 2.2,
+    modelo: " EXCLUSIVE",
     precio: "827",
     imgSrc: "../assets/hannabach/exclusive.jpg"
     },
-    {modelo: " GOLDIN",
+    {id: 2.3,
+    modelo: " GOLDIN",
     precio: "765",
     imgSrc: "../assets/hannabach/goldin.jpg"
     },
-    {modelo: "HANNABACH SP CARBÓN",
+    {id: 2.4,
+    modelo: "HANNABACH SP CARBÓN",
     precio: "596",
     imgSrc: "../assets/hannabach/cus-car.jpg"
     },
-    {modelo: "HANNABACH CUSTOM-MADE",
+    {id: 2.5,
+    modelo: "HANNABACH CUSTOM-MADE",
     precio: "425",
     imgSrc: "../assets/hannabach/cus.png"
     },
-    {modelo: "HANNABACH SILVER SPECIAL",
+    {id: 2.6,
+    modelo: "HANNABACH SILVER SPECIAL",
     precio: "765",
     imgSrc: "../assets/hannabach/815.png"
     }]

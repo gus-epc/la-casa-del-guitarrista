@@ -1,10 +1,14 @@
 import ItemCount from "./ItemCount";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-const ItemCard = () =>{
+
+const ItemCard = ({addToCart, marca}) =>{
+
+
   const [carrito, setCarrito] = useState(false)
-  const onAdd = () =>{
+  const onAdd = (count) =>{
  setCarrito(true)
+ addToCart(marca, count)
 }
  return ( 
 
