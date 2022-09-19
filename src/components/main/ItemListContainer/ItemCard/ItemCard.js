@@ -2,7 +2,7 @@ import ItemCount from "./ItemCount";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
-const ItemCard = ({addToCart, marca}) =>{
+const ItemCard = ({addToCart,cantidad = 1,  marca}) =>{
 
 
   const [carrito, setCarrito] = useState(false)
@@ -15,7 +15,7 @@ const ItemCard = ({addToCart, marca}) =>{
      <div className="card bg-dark" style={{width: "25rem"}}>
       {carrito
         ?<Link to="/cart">Ir al carrito</Link>
-        :<ItemCount stock={10} initial={1} onAdd={onAdd}/>
+        :<ItemCount stock={10} initial={cantidad} onAdd={onAdd}/>
       }
 </div>
 

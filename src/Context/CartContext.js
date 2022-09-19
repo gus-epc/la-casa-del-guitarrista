@@ -17,7 +17,7 @@ const CartProvider = (props) =>{
             if (itemAct.id === item.id) {
                 const itemActualizado = {
                     ...itemAct,
-                    count: itemAct.count + count
+                    count: count
                 }
                 return itemActualizado
             } else {
@@ -37,8 +37,28 @@ const CartProvider = (props) =>{
     const isInCart = (itemId) =>{
         return cart.some((item) => item.id === itemId)
     }
+    const cantidadTotalItem = (itemId) =>{
+        const item = cart.find((item)=>item.id === itemId)
+        return item?.count
+    }
+    const totalCarrito = () =>{
+        let total = 0;
+        cart.forEach((item)=>{
+            total += item.precio * item.count 
+            
+        })
+        return total
+    }
+    const totalItemsCarrito = ()=>{
+        let total = 0;
+        cart.forEach((item)=>{
+            total += item.count
+        })
+        return total
+        }
+    
     return(
-        <CartContext.Provider value={{cart, addToCart, clear, removeItem}}>
+        <CartContext.Provider value={{cart, addToCart, clear, removeItem, cantidadTotalItem, totalCarrito, totalItemsCarrito}}>
             {props.children}
         </CartContext.Provider>
     )
