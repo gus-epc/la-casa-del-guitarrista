@@ -3,35 +3,41 @@ const HANNABACH = [
   modelo: "HANNABACH 1869",
   precio: "999",
   imgSrc: "../assets/hannabach/1869.jpg",
+  categoria: "hannabach",
   descripcion: "Las mejores cuerdas para guitarra"
   },
   {id: 1.2,
   modelo: "HANNABACH EXCLUSIVE",
   precio: "827",
   imgSrc: "../assets/hannabach/exclusive.jpg",
+  categoria: "hannabach",
   descripcion: "Las mejores cuerdas para guitarra"
   },
   {id: 1.3,
   modelo: "HANNABACH GOLDIN",
   precio: "765",
   imgSrc: "../assets/hannabach/goldin.jpg",
+  categoria: "hannabach",
   descripcion: "Las mejores cuerdas para guitarra"
   },
   {id: 1.4,
   modelo: "HANNABACH SP CARBÓN",
   precio: "596",
   imgSrc: "../assets/hannabach/cus-car.jpg",
+  categoria: "hannabach",
   descripcion: "Las mejores cuerdas para guitarra"
   },
   {id: 1.5,
   modelo: "HANNABACH CUSTOM-MADE",
   precio: "425",
-  imgSrc: "../assets/hannabach/cus.png"
+  imgSrc: "../assets/hannabach/cus.png",
+  categoria: "hannabach",
   },
   {id: 1.6,
   modelo: "HANNABACH SILVER SPECIAL",
   precio: "765",
-  imgSrc: "../assets/hannabach/815.png"
+  imgSrc: "../assets/hannabach/815.png",
+  categoria: "hannabach",
   }]
   const KNOBLOCH = [
     {id: 2.1,

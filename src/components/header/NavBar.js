@@ -16,10 +16,10 @@ const NavBar = () =>{
           </Link>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link to="/"><a className="nav-link" >Nosotros</a> </Link>
-              <Link to="/"><a className="nav-link" >Servicios</a></Link>
-              <Link to="/"><a className="nav-link" >Tienda</a></Link>
-              <Link to="/"><a className="nav-link" >Contacto</a></Link>
+              <Link to="/category/hannabach"><a className="nav-link" >Hannabach</a> </Link>
+              <Link to="/category/knobloch"><a className="nav-link" >Knobloch</a></Link>
+              <Link to="/category/savarez"><a className="nav-link" >Savarez</a></Link>
+
               
           </div>
           <button id="car">
