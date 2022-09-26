@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ItemDetailContainer from "./ItemDetailContainer";
 
 const Category = ({object}) => {
- console.log(object);
+
         return(
          <>
         {object.map(({id, modelo, precio, imgSrc}) => {

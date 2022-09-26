@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { useContext, useEffect,useState } from "react";
+import { useEffect,useState } from "react";
 import {collection, getDocs, query, where } from "firebase/firestore"
 import { db } from '../../../firebaseConfig';
 import Category from "../ItemListContainer/Category";
@@ -7,8 +7,6 @@ import Category from "../ItemListContainer/Category";
 function ItemListContainer () {
 
     const {categoryName} = useParams()
-console.log(categoryName);
-
 
     const [object, setItems] = useState([]);
 

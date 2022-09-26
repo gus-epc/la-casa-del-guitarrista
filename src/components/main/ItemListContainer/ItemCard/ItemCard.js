@@ -10,12 +10,13 @@ const ItemCard = ({addToCart,cantidad = 1,  marca}) =>{
  setCarrito(true)
  addToCart(marca, count)
 }
+console.log();
  return ( 
 
      <div className="card bg-dark" style={{width: "25rem"}}>
       {carrito
         ?<Link to="/cart">Ir al carrito</Link>
-        :<ItemCount stock={10} initial={cantidad} onAdd={onAdd}/>
+        :<ItemCount stock={marca.stock} initial={cantidad} onAdd={onAdd}/>
       }
 </div>
 

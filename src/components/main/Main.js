@@ -1,6 +1,5 @@
 import ItemListContainer from "./ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./ItemListContainer/ItemDetailContainer";
-import Marca from "./Categorias/Marca";
 import Cart from "../cart/Cart";
 import {Routes, Route} from "react-router-dom";
 function Main() {

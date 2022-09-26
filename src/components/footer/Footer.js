@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
 
-    <a className="oculto" href="./">                <img src="https://scontent.fpbc6-1.fna.fbcdn.net/v/t1.6435-1/105991974_2899382556826738_1957006309471431825_n.jpg?stp=c28.24.146.146a_dst-jpg_p200x200&_nc_cat=109&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=jQNgQ4_PrmYAX_gPkue&_nc_ht=scontent.fpbc6-1.fna&oh=00_AT8upKuHvcJYj8yiMyia-BCv4hVKQiw0y7Md8NNYowE91w&oe=632C40D0" alt="" width="55" height="55"></img>  </a>
+    <a className="oculto" href="./">                <img src="../assets/logo.png" alt="" width="55" height="55"></img>  </a>
 
     <ul>
     <li><a className="btn btn-secondary" target="_blank" href="https://www.instagram.com/" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(225, 225, 225)" className="bi bi-instagram" viewBox="0 0 16 16">
